@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.7'
-
+gem 'bootstrap-sass', '~> 3.3.1'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
@@ -30,6 +30,10 @@ group :development do
   gem 'sqlite3'
 end
 
+group :test do
+  gem 'minitest'
+  gem 'minitest-reporters'
+end
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 group :production do
